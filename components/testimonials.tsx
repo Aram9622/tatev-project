@@ -1,9 +1,6 @@
-import Image from 'next/image'
-import TestimonialImage from '@/public/images/testimonial.jpg'
-
 export default function Testimonials() {
   return (
-    <section className="relative">
+    <section className="relative" id="partners">
 
       {/* Illustration behind content */}
       <div className="absolute left-1/2 transform -translate-x-1/2 bottom-0 pointer-events-none -mb-32" aria-hidden="true">
@@ -27,9 +24,7 @@ export default function Testimonials() {
 
           {/* Section header */}
           <div className="max-w-3xl mx-auto text-center pb-12 md:pb-16">
-            <h2 className="h2 mb-4">Sponsors and partners section</h2>
-            <p className="text-xl text-gray-600" data-aos="zoom-y-out">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
-pariatur excepteur sint occaecat cupidatat.</p>
+            <h2 className="h2 mb-4">Partners</h2>
           </div>
 
           {/* Items */}
