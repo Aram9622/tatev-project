@@ -1,5 +1,6 @@
-import VideoThumb from '@/public/images/hero-image.png'
+import VideoThumb from '@/public/images/banner2.jpg'
 import ModalVideo from '@/components/modal-video'
+import Image from 'next/image'
 
 export default function Hero() {
   return (
@@ -14,7 +15,7 @@ export default function Hero() {
               <stop stopColor="#EAEAEA" offset="77.402%" />
               <stop stopColor="#DFDFDF" offset="100%" />
             </linearGradient>
-          </defs>
+          </defs>Seasoned Speakers and the Topics
           <g fill="url(#illustration-01)" fillRule="evenodd">
             <circle cx="1232" cy="128" r="128" />
             <circle cx="155" cy="443" r="64" />
@@ -22,34 +23,29 @@ export default function Hero() {
         </svg>
       </div>
 
-      <div className="max-w-6xl mx-auto px-4 sm:px-6">
+      <div className="max-w-6xl mx-auto px-4 sm:px-6" id='home'>
 
         {/* Hero content */}
-        <div className="pt-32 pb-12 md:pt-40 md:pb-20">
+        <div className="pt-32 pb-12 md:pt-40 md:pb-20" data-aos="zoom-y-out">
 
           {/* Section header */}
           <div className="text-center pb-12 md:pb-16">
-            <h1 className="text-5xl md:text-6xl font-extrabold leading-tighter tracking-tighter mb-4" data-aos="zoom-y-out">NeurOn Talks <span className="bg-clip-text text-transparent bg-gradient-to-r from-blue-500 to-teal-400">wonderful</span></h1>
+            <h1 className="text-5xl md:text-6xl font-extrabold leading-tighter tracking-tighter mb-4 decoration-[#74ab74]" data-aos="zoom-y-out">NeurOn Talks</h1>
             <div className="max-w-3xl mx-auto">
-              <p className="text-xl text-gray-600 mb-8" data-aos="zoom-y-out" data-aos-delay="150">The 1st Conference on Brain and Neuroplasticity in Armenia</p>
+              <p className="text-xl text-gray-600 mb-8" data-aos="zoom-y-out" data-aos-delay="150">is a must-attend conference for anyone passionate about personal development and brain capabilities.</p>
               <div className="max-w-xs mx-auto sm:max-w-none sm:flex sm:justify-center" data-aos="zoom-y-out" data-aos-delay="300">
                 <div>
-                  <a className="btn text-white bg-gray-600 hover:bg-gray-700 w-full mb-4 sm:w-auto sm:mb-0" href="#0">About the Conference</a>
+                  <p className='text-xl text-gray-600 font-black'>May 25, 11:00, Holiday Inn Yerevan - Republic Square</p>
                 </div>
               </div>
             </div>
           </div>
-
-          {/* Hero image */}
-          <ModalVideo
-            thumb={VideoThumb}
-            thumbWidth={768}
-            thumbHeight={432}
-            thumbAlt="Modal video thumbnail"
-            video="/videos/video.mp4"
-            videoWidth={1920}
-            videoHeight={1080} />
-
+        <Image
+              src={VideoThumb}
+              width={1920}
+              height={400}
+              alt="Picture of the author"
+            />
         </div>
 
       </div>
