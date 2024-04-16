@@ -9,6 +9,7 @@ import Features from '@/components/features'
 import FeaturesBlocks from '@/components/features-blocks'
 import Testimonials from '@/components/testimonials'
 import About from '@/components/about'
+import Map from '@/components/map'
 
 export default function Home() {
   return (
@@ -18,6 +19,7 @@ export default function Home() {
       <FeaturesBlocks />
       <About />
       <Testimonials />
+      <Map />
     </>
   )
 }
