@@ -1,7 +1,7 @@
 export const metadata = {
   title: 'Neuron Talks',
   description: 'Page description',
-  image: ''
+  image: '/public/images/banner1.jpg'
 }
 
 import Hero from '@/components/hero'
