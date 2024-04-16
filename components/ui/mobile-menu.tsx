@@ -63,7 +63,7 @@ export default function MobileMenu() {
           leaveFrom="opacity-100"
           leaveTo="opacity-0"
         >
-          <ul className="px-5 py-2">
+          <ul onClick={()=>setMobileNavOpen(false)} className="px-5 py-2">
               <li>
                 <Link href="#home" className="font-medium text-gray-600 hover:text-gray-900 px-5 py-3 flex items-center transition duration-150 ease-in-out">Home</Link>
               </li>
@@ -79,6 +79,7 @@ export default function MobileMenu() {
               <li>
                 <Link href="#partners" className="font-medium text-gray-600 hover:text-gray-900 px-5 py-3 flex items-center transition duration-150 ease-in-out">Partners</Link>
               </li>
+              
               <li>
                 <Link href="https://docs.google.com/forms/d/e/1FAIpQLSehwngrRWWqScy2JYQDanuxkpuDTdsfCofGg561sTDBCokaiw/viewform" target='_blank' className="btn-sm text-gray-200 bg-gray-900 hover:bg-gray-800 ml-3">
                   <span>Become a Partner</span>
