@@ -80,7 +80,7 @@ export default function MobileMenu() {
                 <Link onClick={()=>setMobileNavOpen(false)} href="#partners" className="font-medium text-gray-600 hover:text-gray-900 px-5 py-3 flex items-center transition duration-150 ease-in-out">Partners</Link>
               </li>
               <li>
-                <Link href="" target='_blank' className="btn-sm text-white bg-[#7dec7d] hover:bg-[#76d076] ml-3 mb-3">
+                <Link href="http://easyyy.am/NeurONTalks" target='_blank' className="btn-sm text-white bg-[#7dec7d] hover:bg-[#76d076] ml-3 mb-3">
                   <span>Get Your Ticket</span>
                 </Link>
               </li> 
