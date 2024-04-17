@@ -13,8 +13,8 @@ const inter = Inter({
 })
 
 export const metadata = {
-  title: 'Neuron Talks',
-  description: 'Click for enter to conference',
+  title: 'NeurOn Talks',
+  description: 'Everything About Brain and Neuroplasticity',
 }
 
 export default function RootLayout({
