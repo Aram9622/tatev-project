@@ -54,7 +54,7 @@ export default function About() {
                   <Link href="http://easyyy.am/NeurONTalks" target='_blank' className="py-[25px] px-[25px] font-extrabold text-2xl btn-sm text-white bg-[#7dec7d] hover:bg-[#76d076] ml-3">
                     <span>Get Your Ticket</span>
                   </Link>
-                  <p className="mt-5 text-gray-600"><small className="mt-5"><span>Download the "EasyPay" app</span> <br /><span>Go the "Events" Section</span></small></p>
+                  <p className="mt-5 text-gray-600"><small className="mt-5"><span>Download the "EasyPay" app</span> <br /><span>Go to the "Events" Section</span></small></p>
               </div>
                 
             </div>
