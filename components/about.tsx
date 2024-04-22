@@ -1,8 +1,9 @@
 import { inherits } from "util";
+import Link from 'next/link'
 
 export default function About() {
     return (
-      <section className="relative">
+      <section className="relative" >
   
         {/* Illustration behind content */}
         <div className="absolute left-1/2 transform -translate-x-1/2 bottom-0 pointer-events-none -mb-32" aria-hidden="true">
@@ -38,9 +39,25 @@ export default function About() {
                 <li className="text-xl text-gray-600 mb-8">Invest in your well-being and happiness through personal growth and self-improvement, leading to greater fulfillment and resilience.</li>
                 <li className="text-xl text-gray-600 mb-8">Enjoy engaging conversations, explore innovative ideas, and immerse yourself in an inspiring atmosphere at NeurOn Talks.</li>
             </ol>
+            
             </div>
           </div>
         </div>
+        <div className="max-w-3xl mx-auto text-center pb-12 md:pb-20"  id="ticket"></div>
+        <div className="max-w-3xl mx-auto text-center pb-12">
+              <h2 className="h2 mb-4">Get the tickets with <span className="text-[#7dec7d]">10,000 AMD</span> instead of 15,000 AMD till April 30</h2>
+            </div>
+            <div className="m-auto">
+              
+              <div className="text-center"> 
+                  
+                  <Link href="http://easyyy.am/NeurONTalks" target='_blank' className="py-[25px] px-[25px] font-extrabold text-2xl btn-sm text-white bg-[#7dec7d] hover:bg-[#76d076] ml-3">
+                    <span>Get Your Ticket</span>
+                  </Link>
+                  <p className="mt-5 text-gray-600"><small className="mt-5"><span>Download the "EasyPay" app</span> <br /><span>Go the "Events" Section</span></small></p>
+              </div>
+                
+            </div>
       </section>
     )
   }

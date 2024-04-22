@@ -30,6 +30,7 @@ export default function Features() {
       <div className="absolute inset-0 bg-gray-100 pointer-events-none mb-16" aria-hidden="true"></div>
       {/* <div className="absolute left-0 right-0 m-auto w-px p-px h-20 bg-gray-200 transform -translate-y-1/2"></div> */}
       <div className="absolute left-0 right-0 m-auto w-fit p-px transform -translate-y-1/2">
+        <p></p>
       <Link href="https://docs.google.com/forms/d/e/1FAIpQLSdXEzXldCX0h6gGsuZRXU24GvQ9StOnagrVJswGLstaaB0Ehw/viewform" target='_blank' className="btn-sm text-center text-gray-200 bg-gray-900 hover:bg-gray-800 ml-3">
         <span>Register Here</span>
         <svg className="w-3 h-3 fill-current text-gray-400 shrink-0 ml-2 -mr-1" viewBox="0 0 12 12" xmlns="http://www.w3.org/2000/svg">
