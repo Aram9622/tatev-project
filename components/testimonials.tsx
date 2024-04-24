@@ -1,5 +1,5 @@
 import Image from 'next/image'
-import easywallet from '@/public/images/partners/easywallet.png'
+import arpi_rose from '@/public/images/partners/arpi_rose.png'
 import easypay from '@/public/images/partners/easypay.png'
 import bonaqua from '@/public/images/partners/bonaqua.png'
 export default function Testimonials() {
@@ -32,16 +32,20 @@ export default function Testimonials() {
           </div>
 
           {/* Items */}
-          <div className="max-w-sm md:max-w-4xl mx-auto grid gap-2 grid-cols-2 md:grid-cols-2">
+          <div className="max-w-sm md:max-w-4xl mx-auto grid gap-2 grid-cols-3 md:grid-cols-3">
 
             {/* Item */}
             <div className="flex items-center justify-center py-2 col-span-2 md:col-auto">
-              <Image className="md:max-w-none mx-auto rounded" src={bonaqua} width={150} height="39" alt="BonAqua" />
+              <Image className="md:max-w-none mx-auto rounded" src={bonaqua} width={150} height="39" alt="BonAqua"  title='BonAqua' />
             </div>
 
             {/* Item */}
             <div className="flex items-center justify-center py-2 col-span-2 md:col-auto">
-              <Image className="md:max-w-none mx-auto rounded" src={easypay} width={150} height="39" alt="EasyPay" />
+              <Image className="md:max-w-none mx-auto rounded" src={easypay} width={150} height="39" alt="EasyPay" title="EasyPay"/>
+            </div>
+            {/* Item */}
+            <div className="flex items-center justify-center py-2 col-span-2 md:col-auto">
+              <Image className="md:max-w-none mx-auto rounded" src={arpi_rose} width={150} height="39" alt="Arpi Rose" title="Arpi Rose" />
             </div>
           </div>
         </div>
