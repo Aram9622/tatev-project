@@ -61,6 +61,7 @@ module.exports = {
       },
       fontFamily: {
         inter: ['var(--font-inter)', 'sans-serif'],
+        caveat: ['var(--font-caveat)', 'sans-serif']
       },
       fontSize: {
         xs: '0.75rem',

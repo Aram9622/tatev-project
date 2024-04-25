@@ -8,7 +8,7 @@ export default function Map() {
       <div className="max-w-6xl mx-auto px-4 sm:px-6" id='home'>
 
         {/* Hero content */}
-        <div className="pt-32 pb-12 md:pt-40 md:pb-20" data-aos="zoom-y-out">
+        <div className="pt-32 pb-12 md:pt-10 md:pb-20" data-aos="zoom-y-out">
 
           {/* Section header */}
           <div className="text-center pb-12 md:pb-16">

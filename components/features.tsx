@@ -7,6 +7,7 @@ import tatev from '@/public/images/speakers/speaker1.jpg'
 import babken from '@/public/images/speakers/speaker2.jpg'
 import lucy from '@/public/images/speakers/speaker3.jpeg'
 import tamara from '@/public/images/speakers/speaker4.jpg'
+import anna from '@/public/images/speakers/speaker5.jpg'
 import FeaturesElement from '@/public/images/features-element.png'
 import Link from 'next/link'
 
@@ -70,6 +71,22 @@ export default function Features() {
                   <div className="flex justify-center items-center w-8 h-8 rounded-full flex-shrink-0 ml-3">
                   </div>
                 </a>
+                {/* anna */}
+                <a
+                  className={`flex items-center justify-between text-lg p-5 rounded border transition duration-300 ease-in-out mb-3 ${tab !== 5 ? 'bg-white shadow-md border-gray-200 hover:shadow-lg' : 'bg-gray-200 border-transparent'}`}
+                  href="#0"
+                  onClick={(e) => { e.preventDefault(); setTab(5); }}
+                >
+                  <div>
+                    <div className="font-bold leading-snug tracking-tight mb-1">Anna Gevorgyan</div>
+                    <div className="text-gray-600">
+                      <p>CEO & Co-founder of Gotcha.</p>
+                      <p>Micro-emotion recognition with AI.</p>
+                    </div>
+                  </div>
+                  <div className="flex justify-center items-center w-8 h-8 rounded-full flex-shrink-0 ml-3">
+                  </div>
+                </a>
                 {/* babken */}
                 <a
                   className={`flex items-center text-lg p-5 justify-between rounded border transition duration-300 ease-in-out mb-3 ${tab !== 1 ? 'bg-white shadow-md border-gray-200 hover:shadow-lg' : 'bg-gray-200 border-transparent'}`}
@@ -110,6 +127,7 @@ export default function Features() {
                   <div className="flex justify-center items-center w-8 h-8 rounded-full flex-shrink-0 ml-3">
                   </div>
                 </a>
+                
               </div>
             </div>
 
@@ -187,6 +205,24 @@ export default function Features() {
                   >
                     <div className="relative inline-flex flex-col">
                       <Image className="md:max-w-none mx-auto rounded" src={tatev} width={500} height="462" alt="Features bg" />
+                    </div>
+                  </Transition>
+                  {/* Item 5*/}
+                  <Transition
+                    show={tab === 5}
+                    appear={true}
+                    className="w-full"
+                    enter="transition ease-in-out duration-700 transform order-first"
+                    enterFrom="opacity-0 translate-y-16"
+                    enterTo="opacity-100 translate-y-0"
+                    leave="transition ease-in-out duration-300 transform absolute"
+                    leaveFrom="opacity-100 translate-y-0"
+                    leaveTo="opacity-0 -translate-y-16"
+                    beforeEnter={() => heightFix()}
+                    unmount={false}                     
+                  >
+                    <div className="relative inline-flex flex-col">
+                      <Image className="md:max-w-none mx-auto rounded" src={anna} width={500} height="462" alt="Features bg" />
                     </div>
                   </Transition>
                 </div>
