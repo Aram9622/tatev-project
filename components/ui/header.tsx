@@ -46,7 +46,7 @@ export default function Header() {
                 <Link href="#agenda" className="font-medium text-gray-600 hover:text-gray-900 px-5 py-3 flex items-center transition duration-150 ease-in-out">Agenda</Link>
               </li>
               <li>
-                <Link href="#about" className="font-medium text-gray-600 hover:text-gray-900 px-5 py-3 flex items-center transition duration-150 ease-in-out">About the Conference</Link>
+                <Link href="#about" className="font-medium text-gray-600 hover:text-gray-900 px-5 py-3 flex items-center transition duration-150 ease-in-out">Why Join NeurOn Talks</Link>
               </li>
               <li>
                 <Link href="#partners" className="font-medium text-gray-600 hover:text-gray-900 px-5 py-3 flex items-center transition duration-150 ease-in-out">Partners</Link>

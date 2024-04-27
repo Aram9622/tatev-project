@@ -74,7 +74,7 @@ export default function MobileMenu() {
                 <Link onClick={()=>setMobileNavOpen(false)} href="#agenda" className="font-medium text-gray-600 hover:text-gray-900 px-5 py-3 flex items-center transition duration-150 ease-in-out">Agenda</Link>
               </li>
               <li>
-                <Link onClick={()=>setMobileNavOpen(false)} href="#about" className="font-medium text-gray-600 hover:text-gray-900 px-5 py-3 flex items-center transition duration-150 ease-in-out">About the Conference</Link>
+                <Link onClick={()=>setMobileNavOpen(false)} href="#about" className="font-medium text-gray-600 hover:text-gray-900 px-5 py-3 flex items-center transition duration-150 ease-in-out">Why Join NeurOn Talks</Link>
               </li>
               <li>
                 <Link onClick={()=>setMobileNavOpen(false)} href="#partners" className="font-medium text-gray-600 hover:text-gray-900 px-5 py-3 flex items-center transition duration-150 ease-in-out">Partners</Link>

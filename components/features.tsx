@@ -109,7 +109,7 @@ export default function Features() {
                 >
                   <div>
                     <div className="font-bold leading-snug tracking-tight mb-1">Lucy Nomler</div>
-                    <div className="text-gray-600">Psychology-driven Marketing.</div>
+                    <div className="text-gray-600">Psychology-Driven Marketing.</div>
                   </div>
                   <div className="flex justify-center items-center w-8 h-8 rounded-full  flex-shrink-0 ml-3">
                   </div>
