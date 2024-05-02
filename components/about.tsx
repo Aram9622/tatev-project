@@ -1,5 +1,7 @@
 import { inherits } from "util";
 import Link from 'next/link'
+import PaymentMethod from "@/public/images/payment-methods.jpeg"
+import Image from 'next/image'
 
 export default function About() {
 
@@ -46,24 +48,25 @@ export default function About() {
         </div>
         <div className="max-w-3xl mx-auto text-center pb-12 md:pb-20"  id="ticket"></div>
         <div className="max-w-3xl mx-auto text-center pb-12">
-              <h2 className="h2 mb-4">Get the tickets with <span className="text-[#7dec7d]">10,000 AMD</span> instead of 15,000 AMD till April 30</h2>
+              <h2 className="h2 mb-4">To purchase your <span className="text-[#7dec7d]">ticket</span>, follow these simple steps</h2>
+              <div className="max-w-sm mx-auto grid gap-6 md:grid-cols-1 lg:grid-cols-1 items-start md:max-w-1xl lg:max-w-none pt-1~0">
+                <div>
+                <Image
+                  src={PaymentMethod}
+                  width={1920}
+                  height={400}
+                  alt="Picture of the author"
+                />
+                </div>
+              </div>
             </div>
             <div className="m-auto">
               
               <div className="text-center"> 
                   
-                  <Link href="http://easyyy.am/NeurONTalks" target='_blank' className="py-[25px] px-[25px] font-extrabold text-2xl btn-sm text-white bg-[#7dec7d] hover:bg-[#76d076] ml-3">
+                  <Link href="https://bit.ly/3JIbWTi" target='_blank' className="py-[25px] px-[25px] font-extrabold text-2xl btn-sm text-white bg-[#7dec7d] hover:bg-[#76d076] ml-3">
                     <span>Get Your Ticket</span>
                   </Link>
-                  <p className="mt-5 text-gray-600">
-                    <small className="mt-5">
-                      <span>Download the "EasyPay" app</span>
-                       <br />
-                      <span>
-                        Go to the "Events" Section
-                      </span>
-                    </small>
-                  </p>
               </div>
                 
             </div>
