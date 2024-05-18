@@ -46,7 +46,7 @@ export default function FeaturesBlocks() {
                   </g>
                 </g>
               </svg>
-              <h4 className="text-xl font-bold leading-snug tracking-tight mb-1">Opening Ceremony</h4>
+              <h4 className="text-xl font-bold leading-snug tracking-tight mb-1">Module 1</h4>
               <p className="text-gray-600 text-center bg-[#dadfe7] p-[5px] rounded-[6px]">11:30 ~ 12:00</p>
             </div>
 
@@ -63,7 +63,7 @@ export default function FeaturesBlocks() {
                   </g>
                 </g>
               </svg>
-              <h4 className="text-xl font-bold leading-snug tracking-tight mb-1">Module 1</h4>
+              <h4 className="text-xl font-bold leading-snug tracking-tight mb-1">Module 2</h4>
               <p className="text-gray-600 text-center bg-[#dadfe7] p-[5px] rounded-[6px]">12:00 ~ 12:40</p>
             </div>
 
@@ -86,7 +86,7 @@ export default function FeaturesBlocks() {
                   </g>
                 </g>
               </svg>
-              <h4 className="text-xl font-bold leading-snug tracking-tight mb-1">Module 2</h4>
+              <h4 className="text-xl font-bold leading-snug tracking-tight mb-1">Module 3</h4>
               <p className="text-gray-600 text-center bg-[#dadfe7] p-[5px] rounded-[6px]">13:00 ~ 13:45</p>
             </div>
 
@@ -109,7 +109,7 @@ export default function FeaturesBlocks() {
                   </g>
                 </g>
               </svg>
-              <h4 className="text-xl font-bold leading-snug tracking-tight mb-1">Module 3</h4>
+              <h4 className="text-xl font-bold leading-snug tracking-tight mb-1">Module 4</h4>
               <p className="text-gray-600 text-center bg-[#dadfe7] p-[5px] rounded-[6px]">14:00 ~ 14:45</p>
             </div>
 
@@ -131,7 +131,7 @@ export default function FeaturesBlocks() {
                   </g>
                 </g>
               </svg>
-              <h4 className="text-xl font-bold leading-snug tracking-tight mb-1">Module 4</h4>
+              <h4 className="text-xl font-bold leading-snug tracking-tight mb-1">Module 5</h4>
               <p className="text-gray-600 text-center bg-[#dadfe7] p-[5px] rounded-[6px]">15:00 ~ 15:45</p>
             </div>
 

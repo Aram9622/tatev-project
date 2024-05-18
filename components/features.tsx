@@ -66,7 +66,7 @@ export default function Features() {
                 >
                   <div>
                     <div className="font-bold leading-snug tracking-tight mb-1">Tatevik Kishoyan</div>
-                    <div className="text-gray-600">Neuromarketing & its connection to Neuroplasticity. </div>
+                    <div className="text-gray-600">Organizer|Neuromarketing & its connection to Neuroplasticity. </div>
                   </div>
                   <div className="flex justify-center items-center w-8 h-8 rounded-full flex-shrink-0 ml-3">
                   </div>
