@@ -1,6 +1,6 @@
 import { inherits } from "util";
 import Link from 'next/link'
-import PaymentMethod from "@/public/images/payment-methods.jpeg"
+import PaymentMethod from "@/public/images/payment-methods.jpg"
 import Image from 'next/image'
 
 export default function About() {
