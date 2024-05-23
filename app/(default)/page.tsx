@@ -8,6 +8,7 @@ import Hero from '@/components/hero'
 import Features from '@/components/features'
 import FeaturesBlocks from '@/components/features-blocks'
 import Testimonials from '@/components/testimonials'
+import Sponsor from '@/components/sponsore'
 import About from '@/components/about'
 import Map from '@/components/map'
 
@@ -18,6 +19,7 @@ export default function Home() {
       <Features />
       <FeaturesBlocks />
       <About />
+      <Sponsor />
       <Testimonials />
       <Map />
     </>
