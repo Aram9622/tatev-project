@@ -115,7 +115,7 @@ export default function Features() {
                   </div>
                 </a>
                 {/* tamara */}
-                <a
+                {/* <a
                   className={`flex items-center justify-between text-lg p-5 rounded border transition duration-300 ease-in-out mb-3 ${tab !== 2 ? 'bg-white shadow-md border-gray-200 hover:shadow-lg' : 'bg-gray-200 border-transparent'}`}
                   href="#0"
                   onClick={(e) => { e.preventDefault(); setTab(2); }}
@@ -126,7 +126,7 @@ export default function Features() {
                   </div>
                   <div className="flex justify-center items-center w-8 h-8 rounded-full flex-shrink-0 ml-3">
                   </div>
-                </a>
+                </a> */}
                 
               </div>
             </div>
@@ -205,24 +205,6 @@ export default function Features() {
                   >
                     <div className="relative inline-flex flex-col">
                       <Image className="md:max-w-none mx-auto rounded" src={tatev} width={500} height="462" alt="Features bg" />
-                    </div>
-                  </Transition>
-                  {/* Item 5*/}
-                  <Transition
-                    show={tab === 5}
-                    appear={true}
-                    className="w-full"
-                    enter="transition ease-in-out duration-700 transform order-first"
-                    enterFrom="opacity-0 translate-y-16"
-                    enterTo="opacity-100 translate-y-0"
-                    leave="transition ease-in-out duration-300 transform absolute"
-                    leaveFrom="opacity-100 translate-y-0"
-                    leaveTo="opacity-0 -translate-y-16"
-                    beforeEnter={() => heightFix()}
-                    unmount={false}                     
-                  >
-                    <div className="relative inline-flex flex-col">
-                      <Image className="md:max-w-none mx-auto rounded" src={anna} width={500} height="462" alt="Features bg" />
                     </div>
                   </Transition>
                 </div>
