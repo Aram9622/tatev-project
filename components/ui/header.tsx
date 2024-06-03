@@ -52,7 +52,7 @@ export default function Header() {
                 <Link href="/signin" className="font-medium text-gray-600 hover:text-gray-900 px-5 py-3 flex items-center transition duration-150 ease-in-out">Sign in</Link>
               </li> */}
               <li>
-                <Link href="#ticket" className="btn-sm text-white bg-[#ff0000a0] hover:bg-[#ff0000a0] ml-3">
+                <Link href="#book" className="btn-sm text-white bg-[#ff0000a0] hover:bg-[#ff0000a0] ml-3">
                   <span>Get Your Book</span>
                 </Link>
               </li> 
