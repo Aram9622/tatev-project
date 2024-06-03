@@ -1,6 +1,6 @@
 import { inherits } from "util";
 import Link from 'next/link'
-import PaymentMethod from "@/public/images/payment-methods.jpg"
+import PaymentMethod from "@/public/images/payment-banner.jpeg"
 import Image from 'next/image'
 
 export default function About() {
@@ -48,7 +48,7 @@ export default function About() {
         </div>
         <div className="max-w-3xl mx-auto text-center pb-12 md:pb-20"  id="ticket"></div>
         <div className="max-w-3xl mx-auto text-center pb-12">
-              <h2 className="h2 mb-4">To purchase your <span className="text-[#7dec7d]">ticket</span>, follow these simple steps</h2>
+              <h2 className="h2 mb-4">Get the 1st Book In Armenian on Brain and Neuroplasticity</h2>
               <div className="max-w-sm mx-auto grid gap-6 md:grid-cols-1 lg:grid-cols-1 items-start md:max-w-1xl lg:max-w-none pt-10">
                 <div>
                 <Image
@@ -64,8 +64,8 @@ export default function About() {
               
               <div className="text-center"> 
                   
-                  <Link href="https://bit.ly/3JIbWTi" target='_blank' className="py-[25px] px-[25px] font-extrabold text-2xl btn-sm text-white bg-[#7dec7d] hover:bg-[#76d076] ml-3">
-                    <span>Get Your Ticket</span>
+                  <Link href="https://docs.google.com/forms/d/e/1FAIpQLSfIGXrpGYLhRQHm8JC18WmSuHmsl4Uzz4Yfdqaye7vD87i3Gg/viewform" target='_blank' className="py-[25px] px-[25px] font-extrabold text-2xl btn-sm text-white bg-[#ff0000a0] hover:bg-[#76d076] ml-3">
+                    <span>Get Your Book</span>
                   </Link>
               </div>
                 

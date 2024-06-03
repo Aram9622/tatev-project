@@ -71,21 +71,18 @@ export default function MobileMenu() {
                 <Link onClick={()=>setMobileNavOpen(false)} href="#speakers" className="font-medium text-gray-600 hover:text-gray-900 px-5 py-3 flex items-center transition duration-150 ease-in-out">Speakers</Link>
               </li>
               <li>
-                <Link onClick={()=>setMobileNavOpen(false)} href="#agenda" className="font-medium text-gray-600 hover:text-gray-900 px-5 py-3 flex items-center transition duration-150 ease-in-out">Agenda</Link>
-              </li>
-              <li>
                 <Link onClick={()=>setMobileNavOpen(false)} href="#about" className="font-medium text-gray-600 hover:text-gray-900 px-5 py-3 flex items-center transition duration-150 ease-in-out">Why Join NeurOn Talks</Link>
               </li>
               <li>
                 <Link onClick={()=>setMobileNavOpen(false)} href="#partners" className="font-medium text-gray-600 hover:text-gray-900 px-5 py-3 flex items-center transition duration-150 ease-in-out">Partners</Link>
               </li>
               <li>
-                <Link onClick={()=>setMobileNavOpen(false)} href="#ticket" className="btn-sm text-white bg-[#7dec7d] hover:bg-[#76d076] ml-3 mb-3">
-                  <span>Get Your Ticket</span>
+                <Link onClick={()=>setMobileNavOpen(false)} href="#ticket" className="btn-sm text-white bg-[#ff0000a0] hover:bg-[#ff0000a0] ml-3 mb-3">
+                  <span>Get Your Book</span>
                 </Link>
               </li> 
               <li>
-                <Link href="https://docs.google.com/forms/d/e/1FAIpQLSehwngrRWWqScy2JYQDanuxkpuDTdsfCofGg561sTDBCokaiw/viewform" target='_blank' className="btn-sm text-gray-200 bg-gray-900 hover:bg-gray-800 ml-3">
+                <Link href="https://docs.google.com/forms/d/e/1FAIpQLScCvrR_JkRwzoivY_TeDgX6tk3_Gfc3cQrntOrLZcALySm_sA/viewform" target='_blank' className="btn-sm text-gray-200 bg-gray-900 hover:bg-gray-800 ml-3">
                   <span>Become a Partner</span>
                   <svg className="w-3 h-3 fill-current text-gray-400 shrink-0 ml-2 -mr-1" viewBox="0 0 12 12" xmlns="http://www.w3.org/2000/svg">
                     <path d="M11.707 5.293L7 .586 5.586 2l3 3H0v2h8.586l-3 3L7 11.414l4.707-4.707a1 1 0 000-1.414z" fillRule="nonzero" />

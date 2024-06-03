@@ -35,7 +35,7 @@ export default function Hero() {
               <p className="text-xl text-gray-600 mb-8" data-aos="zoom-y-out" data-aos-delay="150">is a must-attend conference for anyone passionate about personal development and brain capabilities.</p>
               <div className="max-w-xs mx-auto sm:max-w-none sm:flex sm:justify-center" data-aos="zoom-y-out" data-aos-delay="300">
                 <div>
-                  <p className='text-xl text-gray-600 font-black'>May 25, 11:00, Holiday Inn Yerevan - Republic Square</p>
+                  <p className='text-xl text-gray-600 font-black'>NeurOn Talks 2 Soon...</p>
                 </div>
               </div>
             </div>
