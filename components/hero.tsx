@@ -49,9 +49,7 @@ export default function Hero() {
               <iframe width="1104" height="621" 
         src="https://www.youtube.com/embed/Jp5okNO9ymU" 
         title="NeurOn Talks | Brain and Neuroplasticity Conference" 
-        frameborder="0" 
-        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
-        referrerpolicy="strict-origin-when-cross-origin" allowfullscreen>
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" >
           
         </iframe>
         </div>
