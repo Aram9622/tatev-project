@@ -111,6 +111,16 @@ export default function About() {
             </div>
           </div>
         </div>
+        <div className="m-auto">
+
+        <div className="text-center">
+
+          <Link href="https://img1.wsimg.com/blobby/go/449ee38c-7612-4247-bb01-01007285f4f0/downloads/LIFE%20IN%20ARMENIA%20-%20JUN%202024.pdf?ver=1719821726985" target='_blank' className="py-[25px] px-[25px] font-extrabold text-2xl btn-sm text-white bg-[#ff0000a0] hover:bg-[#76d076] ml-3">
+            <span>Read here</span>
+          </Link>
+        </div>
+
+      </div>
         <div className="py-12 md:py-20">
 
           {/* Section header */}
@@ -137,16 +147,7 @@ export default function About() {
           </div>
         </div>
       </div>
-      <div className="m-auto">
-
-        <div className="text-center">
-
-          <Link href="https://img1.wsimg.com/blobby/go/449ee38c-7612-4247-bb01-01007285f4f0/downloads/LIFE%20IN%20ARMENIA%20-%20JUN%202024.pdf?ver=1719821726985" target='_blank' className="py-[25px] px-[25px] font-extrabold text-2xl btn-sm text-white bg-[#ff0000a0] hover:bg-[#76d076] ml-3">
-            <span>Read here</span>
-          </Link>
-        </div>
-
-      </div>
+      
     </section>
   )
 }
