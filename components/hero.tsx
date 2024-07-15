@@ -40,12 +40,20 @@ export default function Hero() {
               </div>
             </div>
           </div>
-        <Image
-              src={VideoThumb}
-              width={1920}
-              height={400}
-              alt="Picture of the author"
-            />
+          {/* <Image
+                src={VideoThumb}
+                width={1920}
+                height={400}
+                alt="Picture of the author"
+              /> */}
+              <iframe width="1104" height="621" 
+        src="https://www.youtube.com/embed/Jp5okNO9ymU" 
+        title="NeurOn Talks | Brain and Neuroplasticity Conference" 
+        frameborder="0" 
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+        referrerpolicy="strict-origin-when-cross-origin" allowfullscreen>
+          
+        </iframe>
         </div>
 
       </div>
