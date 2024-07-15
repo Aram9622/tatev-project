@@ -99,7 +99,7 @@ export default function About() {
         </div>
         <div className="max-w-3xl mx-auto text-center pb-12 md:pb-20"></div>
         <div className="max-w-3xl mx-auto text-center pb-12">
-          <h2 className="h2 mb-4">Life In Armenia about the Conference  </h2>
+          <h2 className="h2 mb-4">Life In Armenia about the Conference</h2>
           <div className="max-w-sm mx-auto grid gap-6 md:grid-cols-1 lg:grid-cols-1 items-start md:max-w-1xl lg:max-w-none pt-10">
             <div>
               <Image
