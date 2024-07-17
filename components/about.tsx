@@ -99,7 +99,7 @@ export default function About() {
         </div>
         <div className="max-w-3xl mx-auto text-center pb-12 md:pb-20"></div>
         <div className="max-w-3xl mx-auto text-center pb-12">
-          <h2 className="h2 mb-4">Life In Armenia about the Conference</h2>
+          <h2 className="h2 mb-4">Media Coverage</h2>
           <div className="max-w-sm mx-auto grid gap-6 md:grid-cols-1 lg:grid-cols-1 items-start md:max-w-1xl lg:max-w-none pt-10">
             <div>
               <Image
@@ -113,14 +113,31 @@ export default function About() {
         </div>
         <div className="m-auto">
 
-        <div className="text-center">
+          <div className="text-center">
 
-          <Link href="https://img1.wsimg.com/blobby/go/449ee38c-7612-4247-bb01-01007285f4f0/downloads/LIFE%20IN%20ARMENIA%20-%20JUN%202024.pdf?ver=1719821726985" target='_blank' className="py-[25px] px-[25px] font-extrabold text-2xl btn-sm text-white bg-[#ff0000a0] hover:bg-[#76d076] ml-3">
-            <span>Read here</span>
-          </Link>
+            <Link href="https://img1.wsimg.com/blobby/go/449ee38c-7612-4247-bb01-01007285f4f0/downloads/LIFE%20IN%20ARMENIA%20-%20JUN%202024.pdf?ver=1719821726985" target='_blank' className="py-[25px] px-[25px] font-extrabold text-2xl btn-sm text-white bg-[#ff0000a0] hover:bg-[#76d076] ml-3">
+              <span>Read here</span>
+            </Link>
+          </div>
+        </div>
+        <div className="max-w-3xl mx-auto text-center pb-12 mt-[50px]">
+        {/* <h2 className="h2 mb-4">Media Coverage123</h2> */}
+          <div className="max-w-sm md:max-w-4xl mx-auto grid gap-2 lg:grid-cols-2 sm:grid-cols-2 mt-[40px]">
+            <iframe width="100%" height="400"
+              src="https://www.youtube.com/embed/0jvEnmz3tyw"
+              title="NeurOn Talks | Brain and Neuroplasticity Conference"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" >
+
+            </iframe>
+            <iframe width="100%" height="400"
+              src="https://www.youtube.com/embed/eUvUM91WaNU"
+              title="NeurOn Talks | Brain and Neuroplasticity Conference"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" >
+
+            </iframe>
+          </div>
         </div>
 
-      </div>
         <div className="py-12 md:py-20">
 
           {/* Section header */}
@@ -147,7 +164,7 @@ export default function About() {
           </div>
         </div>
       </div>
-      
+
     </section>
   )
 }
