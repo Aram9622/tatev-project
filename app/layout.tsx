@@ -37,8 +37,21 @@ export default function RootLayout({
       <meta property="og:image" content="/images/banner1.jpg" data-rh="true"></meta>
       <Head>
         <link rel="icon" href="/favicon.ico" />
+        <script
+          type="text/javascript"
+          dangerouslySetInnerHTML={{
+            __html: `
+              (function(c,l,a,r,i,t,y){
+                  c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
+                  t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;
+                  y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
+              })(window, document, "clarity", "script", "oyfx9qos3r");
+            `,
+          }}
+        />
       </Head>
       <GoogleAnalytics gaId="G-MNCEMWRQK3" />
+      
       <body className={`${inter.variable} font-inter antialiased bg-white text-gray-900 tracking-tight`}>
         <div className="flex flex-col min-h-screen overflow-hidden supports-[overflow:clip]:overflow-clip">
           <Header />
