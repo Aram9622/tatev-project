@@ -67,9 +67,9 @@ export default function Features() {
                 </a>
                 {/* anna */}
                 <a
-                  className={`flex items-center justify-between text-lg p-5 rounded border transition duration-300 ease-in-out mb-3 ${tab !== 5 ? 'bg-white shadow-md border-gray-200 hover:shadow-lg' : 'bg-gray-200 border-transparent'}`}
+                  className={`flex items-center justify-between text-lg p-5 rounded border transition duration-300 ease-in-out mb-3 ${tab !== 2 ? 'bg-white shadow-md border-gray-200 hover:shadow-lg' : 'bg-gray-200 border-transparent'}`}
                   href="#0"
-                  onClick={(e) => { e.preventDefault(); setTab(5); }}
+                  onClick={(e) => { e.preventDefault(); setTab(2); }}
                 >
                   <div>
                     <div className="font-bold leading-snug tracking-tight mb-1">Anna Gevorgyan</div>
@@ -162,7 +162,7 @@ export default function Features() {
                     unmount={false}                     
                   >
                     <div className="relative inline-flex flex-col">
-                      <Image className="md:max-w-none mx-auto rounded" src={tamara} width={500} height="462" alt="Features bg" />
+                      <Image className="md:max-w-none mx-auto rounded" src={anna} width={500} height="462" alt="Features bg" />
                     </div>
                   </Transition>
                   {/* Item 3 */}
