@@ -1,5 +1,5 @@
 export const metadata = {
-  title: 'Neuron Talks',
+  title: 'NeurOn Talks',
   description: 'Page description',
   image: '/public/images/banner1.jpg'
 }

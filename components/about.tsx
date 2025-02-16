@@ -47,16 +47,6 @@ export default function About() {
           </div>
         </div>
       </div>
-      <div className="m-auto">
-
-        <div className="text-center">
-
-          <Link href="https://docs.google.com/forms/d/e/1FAIpQLSfIGXrpGYLhRQHm8JC18WmSuHmsl4Uzz4Yfdqaye7vD87i3Gg/viewform" target='_blank' className="py-[25px] px-[25px] font-extrabold text-2xl btn-sm text-white bg-[#ff0000a0] hover:bg-[#76d076] ml-3">
-            <span>Get Your Book</span>
-          </Link>
-        </div>
-
-      </div>
       <div className="max-w-6xl mx-auto px-4 sm:px-6" id="about">
         <div className="py-12 md:py-20">
 

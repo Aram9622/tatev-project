@@ -52,8 +52,8 @@ export default function Header() {
                 <Link href="/signin" className="font-medium text-gray-600 hover:text-gray-900 px-5 py-3 flex items-center transition duration-150 ease-in-out">Sign in</Link>
               </li> */}
               <li>
-                <Link href="https://www.neurontalks.am/neurontalks1" target='_blank' className="btn-sm text-white bg-[#ff0000a0] hover:bg-[#ff0000a0] ml-3">
-                  <span>Neuron Talks 1</span>
+                <Link href="https://www.neurontalks.am/neurontalks1" target='_blank' className="btn-sm text-white bg-[#757575] hover:bg-black ml-3">
+                  <span>NeurOn Talks 1</span>
                 </Link>
               </li> 
               <li>
