@@ -35,7 +35,7 @@ export default function Hero() {
               <p className="text-xl text-gray-600 mb-8" data-aos="zoom-y-out" data-aos-delay="150">The Brain Code | Bridging Neuroscience and AI</p>
               <div className="max-w-xs mx-auto sm:max-w-none sm:flex sm:justify-center" data-aos="zoom-y-out" data-aos-delay="300">
                 <div>
-                  <a href="https://tally.so/r/n9o9RQ" target='_blank' className='btn-sm text-white bg-[#ff0000a0] hover:bg-[#ff0000a0] ml-3'>Register Now</a>
+                  <a href="https://tally.so/r/n9o9RQ" target='_blank' className='btn-sm px-8 py-4 text-xl text-white bg-[#ff0000a0] hover:bg-[#ff0000a0] ml-3'>Register Now</a>
                 </div>
               </div>
             </div>
