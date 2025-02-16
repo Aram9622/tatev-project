@@ -47,6 +47,20 @@ export default function About() {
           </div>
         </div>
       </div>
+      <div className="max-w-3xl mx-auto text-center pb-12 md:pb-20" id="book"></div>
+      <div className="max-w-3xl mx-auto text-center pb-12">
+        <h2 className="h2 mb-4">Get the 1st Book In Armenian on Brain and Neuroplasticity</h2>
+        <div className="max-w-sm mx-auto grid gap-6 md:grid-cols-1 lg:grid-cols-1 items-start md:max-w-1xl lg:max-w-none pt-10">
+          <div>
+            <Image
+              src={PaymentMethod}
+              width={1920}
+              height={400}
+              alt="Picture of the author"
+            />
+          </div>
+        </div>
+      </div>
       <div className="m-auto">
 
         <div className="text-center">

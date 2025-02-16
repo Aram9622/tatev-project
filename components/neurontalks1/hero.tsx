@@ -30,12 +30,12 @@ export default function Hero() {
 
           {/* Section header */}
           <div className="text-center pb-12 md:pb-16">
-            <h1 className="text-5xl md:text-6xl font-extrabold leading-tighter tracking-tighter mb-4 decoration-[#74ab74]" data-aos="zoom-y-out">NeurOn Talks 2</h1>
+            <h1 className="text-5xl md:text-6xl font-extrabold leading-tighter tracking-tighter mb-4 decoration-[#74ab74]" data-aos="zoom-y-out">NeurOn Talks</h1>
             <div className="max-w-3xl mx-auto">
-              <p className="text-xl text-gray-600 mb-8" data-aos="zoom-y-out" data-aos-delay="150">The Brain Code | Bridging Neuroscience and AI.</p>
+              <p className="text-xl text-gray-600 mb-8" data-aos="zoom-y-out" data-aos-delay="150">is a must-attend conference for anyone passionate about personal development and brain capabilities.</p>
               <div className="max-w-xs mx-auto sm:max-w-none sm:flex sm:justify-center" data-aos="zoom-y-out" data-aos-delay="300">
                 <div>
-                  <a href="https://tally.so/r/n9o9RQ" target='_blank' className='btn-sm text-white bg-[#ff0000a0] hover:bg-[#ff0000a0] ml-3'>Register Now</a>
+                  <p className='text-xl text-gray-600 font-black'>NeurOn Talks 2 | May 24. 2025</p>
                 </div>
               </div>
             </div>
