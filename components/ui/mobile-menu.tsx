@@ -77,8 +77,8 @@ export default function MobileMenu() {
                 <Link onClick={()=>setMobileNavOpen(false)} href="#partners" className="font-medium text-gray-600 hover:text-gray-900 px-5 py-3 flex items-center transition duration-150 ease-in-out">Partners</Link>
               </li>
               <li>
-                <Link onClick={()=>setMobileNavOpen(false)} href="#ticket" className="btn-sm text-white bg-[#ff0000a0] hover:bg-[#ff0000a0] ml-3 mb-3">
-                  <span>Get Your Book</span>
+                <Link onClick={()=>setMobileNavOpen(false)} href="https://www.neurontalks.am/neurontalks1" target='_blank' className="btn-sm text-white bg-[#ff0000a0] hover:bg-[#ff0000a0] ml-3">
+                  <span>Neuron Talks 1</span>
                 </Link>
               </li> 
               <li>
