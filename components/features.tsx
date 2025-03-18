@@ -105,7 +105,7 @@ export default function Features() {
                   onClick={(e) => {
                     e.preventDefault();
                     setTab(speaker.id);
-                    location.href = "#speakersList"
+                    location.href = "#speaker"+speaker.id
                   }}
                 >
                   <div>
@@ -144,7 +144,7 @@ export default function Features() {
                     unmount={false}
                   >
                     <div className="relative inline-flex flex-col">
-                      <Image className="md:max-w-none mx-auto rounded" src={speaker.image} width={500} height={462} alt="Features bg" id="speakersList"/>
+                      <Image className="md:max-w-none mx-auto rounded" src={speaker.image} width={500} height={462} alt="Features bg" id={"speaker"+speaker.id}/>
                     </div>
                   </Transition>
                 ))}
