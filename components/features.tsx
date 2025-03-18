@@ -105,6 +105,7 @@ export default function Features() {
                   onClick={(e) => {
                     e.preventDefault();
                     setTab(speaker.id);
+                    location.href = "#speakers"
                   }}
                 >
                   <div>
