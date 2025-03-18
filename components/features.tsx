@@ -105,7 +105,7 @@ export default function Features() {
                   onClick={(e) => {
                     e.preventDefault();
                     setTab(speaker.id);
-                    location.href = "#speakers"
+                    location.href = "#speakersList"
                   }}
                 >
                   <div>
@@ -127,7 +127,7 @@ export default function Features() {
             {/* Tabs items */}
             <div className="max-w-xl md:max-w-none md:w-full mx-auto md:col-span-5 lg:col-span-6 mb-8 md:mb-0 md:order-1">
               <div className="transition-all">
-                <div className="relative flex flex-col text-center lg:text-right" data-aos="zoom-y-out" ref={tabs} id='speakers'>
+                <div className="relative flex flex-col text-center lg:text-right" data-aos="zoom-y-out" ref={tabs} >
                 {speakers.map((speaker) => (
                   <Transition
                     key={speaker.id}
@@ -144,14 +144,13 @@ export default function Features() {
                     unmount={false}
                   >
                     <div className="relative inline-flex flex-col">
-                      <Image className="md:max-w-none mx-auto rounded" src={speaker.image} width={500} height={462} alt="Features bg" />
+                      <Image className="md:max-w-none mx-auto rounded" src={speaker.image} width={500} height={462} alt="Features bg" id="speakersList"/>
                     </div>
                   </Transition>
                 ))}
                 </div>
               </div>
             </div>
-
           </div>
 
         </div>
