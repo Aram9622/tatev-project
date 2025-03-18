@@ -3,16 +3,57 @@
 import { useState, useRef, useEffect } from 'react'
 import { Transition } from '@headlessui/react'
 import Image from 'next/image'
-import tatev from '@/public/images/speakers/speaker1.jpg'
+// import tatev from '@/public/images/speakers/speaker1.jpg'
 import babken from '@/public/images/speakers/speaker2.jpg'
 import lucy from '@/public/images/speakers/speaker3.jpeg'
-import tamara from '@/public/images/speakers/speaker4.jpg'
 import anna from '@/public/images/speakers/speaker5.jpg'
-import FeaturesElement from '@/public/images/features-element.png'
-import Link from 'next/link'
+
+import tatev from '@/public/images/speakers2/Tatev.png'
+import aram from '@/public/images/speakers2/Aram.png'
+import edgar from '@/public/images/speakers2/Edgar.png'
+import nare from '@/public/images/speakers2/Nare.png'
+import pavel from '@/public/images/speakers2/pavel.png'
+import dr_tatev from '@/public/images/speakers2/dr_Tatev.png'
 
 export default function Features() {
-  
+  const speakers = [
+    {
+      id: 4,
+      name: "Tatevik Kishoyan",
+      role: "Neuroplasticity| About the Book| Goal of the Conference.",
+      image: tatev,
+    },
+    {
+      id: 1,
+      name: "Aram Hovsepyan",
+      role: "Inner psychological image of health.",
+      image: aram,
+    },
+    {
+      id: 2,
+      name: "Edgar Galstyan",
+      role: "AI and Human Brain.",
+      image: edgar,
+    },
+    {
+      id: 3,
+      name: "Nare Hambardzumyan",
+      role: "AI in Brain Health | Neurology.",
+      image: nare,
+    },
+    {
+      id: 5,
+      name: "Pavel Alfimov",
+      role: "ADHD in daily life",
+      image: pavel,
+    },
+    {
+      id: 6,
+      name: "DR Tatev Khachatryan",
+      role: "Mental Health and Artificial Intelligence at the crossroads of science and technology.",
+      image: dr_tatev,
+    }
+  ];
   const [tab, setTab] = useState<number>(4)
 
   const tabs = useRef<HTMLDivElement>(null)
@@ -46,92 +87,50 @@ export default function Features() {
           {/* Section content */}
           <div className="md:grid md:grid-cols-12 md:gap-6">
             {/* Content */}
-            <div className="max-w-xl md:max-w-none md:w-full mx-auto md:col-span-7 lg:col-span-6 md:mt-6" data-aos="fade-right">
-              <div className="md:pr-4 lg:pr-12 xl:pr-16 mb-8">
+            <div className="max-w-xl md:max-w-none md:w-full mx-auto md:col-span-7 lg:col-span-6" data-aos="fade-right">
+              <div className="md:pr-4 lg:pr-12 xl:pr-16">
                 <p className="text-xl text-gray-600"></p>
               </div>
               {/* Tabs buttons */}
               <div className="mb-8 md:mb-0">
-                {/* tatev */}
+              {speakers.map((speaker) => (
                 <a
-                  className={`flex items-center justify-between text-lg p-5 rounded border transition duration-300 ease-in-out mb-3 ${tab !== 4 ? 'bg-white shadow-md border-gray-200 hover:shadow-lg' : 'bg-gray-200 border-transparent'}`}
-                  href="#0"
-                  onClick={(e) => { e.preventDefault(); setTab(4); }}
+                  key={speaker.id}
+                  className={`flex items-center justify-between text-lg p-5 rounded border transition duration-300 ease-in-out mb-3 ${
+                    tab !== speaker.id
+                      ? "bg-white shadow-md border-gray-200 hover:shadow-lg"
+                      : "bg-gray-200 border-transparent"
+                  }`}
+                  href="#speakers"
+                  onClick={(e) => {
+                    e.preventDefault();
+                    setTab(speaker.id);
+                  }}
                 >
                   <div>
-                    <div className="font-bold leading-snug tracking-tight mb-1">Tatevik Kishoyan</div>
-                    <div className="text-gray-600">Organizer|Neuromarketing & its connection to Neuroplasticity. </div>
-                  </div>
-                  <div className="flex justify-center items-center w-8 h-8 rounded-full flex-shrink-0 ml-3">
-                  </div>
-                </a>
-                {/* anna */}
-                <a
-                  className={`flex items-center justify-between text-lg p-5 rounded border transition duration-300 ease-in-out mb-3 ${tab !== 2 ? 'bg-white shadow-md border-gray-200 hover:shadow-lg' : 'bg-gray-200 border-transparent'}`}
-                  href="#0"
-                  onClick={(e) => { e.preventDefault(); setTab(2); }}
-                >
-                  <div>
-                    <div className="font-bold leading-snug tracking-tight mb-1">Anna Gevorgyan</div>
+                    <div className="font-bold leading-snug tracking-tight mb-1">
+                      {speaker.name}
+                    </div>
                     <div className="text-gray-600">
-                      <p>CEO & Co-founder of Gotcha.</p>
-                      <p>Micro-emotion recognition with AI.</p>
+                      {speaker.role.split("\n").map((line, index) => (
+                        <p key={index}>{line}</p>
+                      ))}
                     </div>
                   </div>
-                  <div className="flex justify-center items-center w-8 h-8 rounded-full flex-shrink-0 ml-3">
-                  </div>
+                  <div className="flex justify-center items-center w-8 h-8 rounded-full flex-shrink-0 ml-3"></div>
                 </a>
-                {/* babken */}
-                <a
-                  className={`flex items-center text-lg p-5 justify-between rounded border transition duration-300 ease-in-out mb-3 ${tab !== 1 ? 'bg-white shadow-md border-gray-200 hover:shadow-lg' : 'bg-gray-200 border-transparent'}`}
-                  href="#0"
-                  onClick={(e) => { e.preventDefault(); setTab(1); }}
-                >
-                  <div>
-                    <div className="font-bold leading-snug tracking-tight mb-1">Babken Hovhannisyan Ph.D.</div>
-                    <div className="text-gray-600">Rapid processes occurring in the human brain as a result of external stimuli.</div>
-                  </div>
-                  <div className="flex justify-center items-center w-8 h-8  rounded-full  flex-shrink-0 ml-3">
-                
-                  </div>
-                </a>
-                {/* lucy */}
-                <a
-                  className={`flex items-center justify-between text-lg p-5 rounded border transition duration-300 ease-in-out mb-3 ${tab !== 3 ? 'bg-white shadow-md border-gray-200 hover:shadow-lg' : 'bg-gray-200 border-transparent'}`}
-                  href="#0"
-                  onClick={(e) => { e.preventDefault(); setTab(3); }}
-                >
-                  <div>
-                    <div className="font-bold leading-snug tracking-tight mb-1">Lucy Nomler</div>
-                    <div className="text-gray-600">Psychology-Driven Marketing.</div>
-                  </div>
-                  <div className="flex justify-center items-center w-8 h-8 rounded-full  flex-shrink-0 ml-3">
-                  </div>
-                </a>
-                {/* tamara */}
-                {/* <a
-                  className={`flex items-center justify-between text-lg p-5 rounded border transition duration-300 ease-in-out mb-3 ${tab !== 2 ? 'bg-white shadow-md border-gray-200 hover:shadow-lg' : 'bg-gray-200 border-transparent'}`}
-                  href="#0"
-                  onClick={(e) => { e.preventDefault(); setTab(2); }}
-                >
-                  <div>
-                    <div className="font-bold leading-snug tracking-tight mb-1">Tamara Ohanjanyan</div>
-                    <div className="text-gray-600">Popular Science.</div>
-                  </div>
-                  <div className="flex justify-center items-center w-8 h-8 rounded-full flex-shrink-0 ml-3">
-                  </div>
-                </a> */}
-                
+              ))}
               </div>
             </div>
 
             {/* Tabs items */}
             <div className="max-w-xl md:max-w-none md:w-full mx-auto md:col-span-5 lg:col-span-6 mb-8 md:mb-0 md:order-1">
               <div className="transition-all">
-                <div className="relative flex flex-col text-center lg:text-right" data-aos="zoom-y-out" ref={tabs}>
-                  {/* Item 1 */}
+                <div className="relative flex flex-col text-center lg:text-right" data-aos="zoom-y-out" ref={tabs} id='speakers'>
+                {speakers.map((speaker) => (
                   <Transition
-                    show={tab === 1}
+                    key={speaker.id}
+                    show={tab === speaker.id}
                     appear={true}
                     className="w-full"
                     enter="transition ease-in-out duration-700 transform order-first"
@@ -141,66 +140,13 @@ export default function Features() {
                     leaveFrom="opacity-100 translate-y-0"
                     leaveTo="opacity-0 -translate-y-16"
                     beforeEnter={() => heightFix()}
-                    unmount={false}                     
+                    unmount={false}
                   >
                     <div className="relative inline-flex flex-col">
-                      <Image className="md:max-w-none mx-auto rounded" src={babken} width={500} height="462" alt="Features bg" />
+                      <Image className="md:max-w-none mx-auto rounded" src={speaker.image} width={500} height={462} alt="Features bg" />
                     </div>
                   </Transition>
-                  {/* Item 2 */}
-                  <Transition
-                    show={tab === 2}
-                    appear={true}
-                    className="w-full"
-                    enter="transition ease-in-out duration-700 transform order-first"
-                    enterFrom="opacity-0 translate-y-16"
-                    enterTo="opacity-100 translate-y-0"
-                    leave="transition ease-in-out duration-300 transform absolute"
-                    leaveFrom="opacity-100 translate-y-0"
-                    leaveTo="opacity-0 -translate-y-16"
-                    beforeEnter={() => heightFix()}
-                    unmount={false}                     
-                  >
-                    <div className="relative inline-flex flex-col">
-                      <Image className="md:max-w-none mx-auto rounded" src={anna} width={500} height="462" alt="Features bg" />
-                    </div>
-                  </Transition>
-                  {/* Item 3 */}
-                  <Transition
-                    show={tab === 3}
-                    appear={true}
-                    className="w-full"
-                    enter="transition ease-in-out duration-700 transform order-first"
-                    enterFrom="opacity-0 translate-y-16"
-                    enterTo="opacity-100 translate-y-0"
-                    leave="transition ease-in-out duration-300 transform absolute"
-                    leaveFrom="opacity-100 translate-y-0"
-                    leaveTo="opacity-0 -translate-y-16"
-                    beforeEnter={() => heightFix()}
-                    unmount={false}                     
-                  >
-                    <div className="relative inline-flex flex-col">
-                      <Image className="md:max-w-none mx-auto rounded" src={lucy} width={500} height="462" alt="Features bg" />
-                    </div>
-                  </Transition>
-                  {/* Item 4 */}
-                  <Transition
-                    show={tab === 4}
-                    appear={true}
-                    className="w-full"
-                    enter="transition ease-in-out duration-700 transform order-first"
-                    enterFrom="opacity-0 translate-y-16"
-                    enterTo="opacity-100 translate-y-0"
-                    leave="transition ease-in-out duration-300 transform absolute"
-                    leaveFrom="opacity-100 translate-y-0"
-                    leaveTo="opacity-0 -translate-y-16"
-                    beforeEnter={() => heightFix()}
-                    unmount={false}                     
-                  >
-                    <div className="relative inline-flex flex-col">
-                      <Image className="md:max-w-none mx-auto rounded" src={tatev} width={500} height="462" alt="Features bg" />
-                    </div>
-                  </Transition>
+                ))}
                 </div>
               </div>
             </div>
