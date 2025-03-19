@@ -44,7 +44,7 @@ export default function Features() {
     },
     {
       id: 6,
-      name: "DR Tatev Khachatryan",
+      name: "Dr. Tatev Khachatryan",
       role: "Mental Health and Artificial Intelligence at the crossroads of science and technology.",
       image: dr_tatev,
     }

@@ -63,7 +63,7 @@ export default function FeaturesBlocks() {
                   </g>
                 </g>
               </svg>
-              <h4 className="text-xl font-bold leading-snug tracking-tight mb-1">Module 2 | Nare</h4>
+              <h4 className="text-xl font-bold leading-snug tracking-tight mb-1">Module 2 | Dr. Nare</h4>
               <p className="text-gray-600 text-center bg-[#dadfe7] p-[5px] rounded-[6px]">11:15 ~ 11:45</p>
             </div>
 
