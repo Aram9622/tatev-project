@@ -15,37 +15,37 @@ export default function Features() {
     {
       id: 4,
       name: "Tatevik Kishoyan",
-      role: "Neuroplasticity| About the Book| Goal of the Conference.",
+      role: "Neuroplasticity| About the Book| Goal of the Conference",
       image: tatev,
     },
     {
       id: 3,
       name: "Nare Hambardzumyan",
-      role: "AI in Brain Health | Neurology.",
+      role: "AI in Brain Health | Neurology",
       image: nare,
     },
     {
       id: 1,
-      name: "Aram Hovsepyan",
-      role: "Inner psychological image of health.",
+      name: "Dr. Aram Hovsepyan",
+      role: "Inner psychological image of health",
       image: aram,
     },
     {
       id: 5,
-      name: "Pavel Alfimov",
+      name: "Dr. Pavel Alfimov",
       role: "ADHD in daily life",
       image: pavel,
     },
     {
       id: 2,
       name: "Edgar Galstyan",
-      role: "AI and Human Brain.",
+      role: "AI and Human Brain",
       image: edgar,
     },
     {
       id: 6,
       name: "Dr. Tatev Khachatryan",
-      role: "Mental Health and Artificial Intelligence at the crossroads of science and technology.",
+      role: "Mental Health and Artificial Intelligence at the crossroads of science and technology",
       image: dr_tatev,
     }
   ];

@@ -79,7 +79,7 @@ export default function FeaturesBlocks() {
                   </g>
                 </g>
               </svg>
-              <h4 className="text-xl font-bold leading-snug tracking-tight mb-1">Module 2| Aram</h4>
+              <h4 className="text-xl font-bold leading-snug tracking-tight mb-1">Module 2| Dr. Aram</h4>
               <p className="text-gray-600 text-center bg-[#dadfe7] p-[5px] rounded-[6px]">11:45 ~ 12:15</p>
             </div>
 
@@ -95,7 +95,7 @@ export default function FeaturesBlocks() {
                   </g>
                 </g>
               </svg>
-              <h4 className="text-xl font-bold leading-snug tracking-tight mb-1">Module 3| Pavel</h4>
+              <h4 className="text-xl font-bold leading-snug tracking-tight mb-1">Module 3| Dr. Pavel</h4>
               <p className="text-gray-600 text-center bg-[#dadfe7] p-[5px] rounded-[6px]">12:15 ~ 12:45</p>
             </div>
 
@@ -172,7 +172,7 @@ export default function FeaturesBlocks() {
                   </g>
                 </g>
               </svg>
-              <h4 className="text-xl font-bold leading-snug tracking-tight mb-1">Official Neuromarketing Partner</h4>
+              <h4 className="text-xl font-bold leading-snug tracking-tight mb-1">Neuromarketing Partner</h4>
               <p className="text-gray-600 text-center bg-[#dadfe7] p-[5px] rounded-[6px]">14:50 ~ 15:20</p>
             </div>
 
@@ -188,7 +188,7 @@ export default function FeaturesBlocks() {
                   </g>
                 </g>
               </svg>
-              <h4 className="text-xl font-bold leading-snug tracking-tight mb-1">Official Closing Remarks</h4>
+              <h4 className="text-xl font-bold leading-snug tracking-tight mb-1">Closing Remarks</h4>
               <p className="text-gray-600 text-center bg-[#dadfe7] p-[5px] rounded-[6px]">15:20 ~ 15:30</p>
             </div>
 
