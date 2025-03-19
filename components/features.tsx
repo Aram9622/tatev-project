@@ -3,11 +3,6 @@
 import { useState, useRef, useEffect } from 'react'
 import { Transition } from '@headlessui/react'
 import Image from 'next/image'
-// import tatev from '@/public/images/speakers/speaker1.jpg'
-import babken from '@/public/images/speakers/speaker2.jpg'
-import lucy from '@/public/images/speakers/speaker3.jpeg'
-import anna from '@/public/images/speakers/speaker5.jpg'
-
 import tatev from '@/public/images/speakers2/Tatev.png'
 import aram from '@/public/images/speakers2/Aram.png'
 import edgar from '@/public/images/speakers2/Edgar.png'
@@ -24,28 +19,28 @@ export default function Features() {
       image: tatev,
     },
     {
-      id: 1,
-      name: "Aram Hovsepyan",
-      role: "Inner psychological image of health.",
-      image: aram,
-    },
-    {
-      id: 2,
-      name: "Edgar Galstyan",
-      role: "AI and Human Brain.",
-      image: edgar,
-    },
-    {
       id: 3,
       name: "Nare Hambardzumyan",
       role: "AI in Brain Health | Neurology.",
       image: nare,
     },
     {
+      id: 1,
+      name: "Aram Hovsepyan",
+      role: "Inner psychological image of health.",
+      image: aram,
+    },
+    {
       id: 5,
       name: "Pavel Alfimov",
       role: "ADHD in daily life",
       image: pavel,
+    },
+    {
+      id: 2,
+      name: "Edgar Galstyan",
+      role: "AI and Human Brain.",
+      image: edgar,
     },
     {
       id: 6,

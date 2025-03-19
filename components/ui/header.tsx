@@ -1,6 +1,7 @@
 'use client'
 
 import { useState, useEffect } from 'react'
+import { usePathname } from 'next/navigation'
 
 import Link from 'next/link'
 import Logo from './logo'
@@ -10,6 +11,8 @@ import MobileMenu from './mobile-menu'
 export default function Header() {
 
   const [top, setTop] = useState<boolean>(true)
+  const pathname = usePathname()
+  const isNeurontalks1 = pathname.includes('neurontalks1')
 
   // detect whether user has scrolled the page down by 10px
   const scrollHandler = () => {
@@ -48,6 +51,13 @@ export default function Header() {
               <li>
                 <Link href="#partners" className="font-medium text-gray-600 hover:text-gray-900 px-5 py-3 flex items-center transition duration-150 ease-in-out">Partners</Link>
               </li>
+              { !isNeurontalks1 && (
+                <li>
+                  <Link href="#agenda" className="font-medium text-gray-600 hover:text-gray-900 px-5 py-3 flex items-center transition duration-150 ease-in-out">
+                    Agenda
+                  </Link>
+                </li>
+              )}
               {/* <li>
                 <Link href="/signin" className="font-medium text-gray-600 hover:text-gray-900 px-5 py-3 flex items-center transition duration-150 ease-in-out">Sign in</Link>
               </li> */}
