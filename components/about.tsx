@@ -134,7 +134,8 @@ export default function About() {
               </li>
               <li className="text-xl text-gray-600 mb-8" style={{ lineHeight: 2 }}>
                 <p>Drive Business Growth.</p>
-                <p>Unlock new business opportunities. Our 1st conference enabled a partner to secure a lucrative enterprise customer, demonstrating the event's potential to drive significant business growth.</p>
+                <p>Unlock new business opportunities.</p>
+                <strong>Our 1st conference enabled a partner to secure a lucrative enterprise customer, demonstrating the event's potential to drive significant business growth.</strong>
               </li>
             </ol>
           </div>
