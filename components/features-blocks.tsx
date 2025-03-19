@@ -2,7 +2,7 @@ import Image from 'next/image'
 import agendaIcon from '@/public/images/icons/agenda.svg'
 export default function FeaturesBlocks() {
   return (
-    <section className="relative" id="agenda">
+    <section className="relative mt-40" id="agenda">
 
       {/* Section background (needs .relative class on parent and next sibling elements) */}
       {/* <div className="absolute inset-0 top-1/2 md:mt-24 lg:mt-0 bg-gray-900 pointer-events-none" aria-hidden="true"></div> */}
