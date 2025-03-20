@@ -1,10 +1,13 @@
 import Image from 'next/image'
-import arpi_rose from '@/public/images/partners/arpi_rose.png'
-import easypay from '@/public/images/partners/easypay.png'
-import bonaqua from '@/public/images/partners/bonaqua.png'
-import cinema_lab from '@/public/images/partners/CinemaLab.png'
-import gotcha from '@/public/images/partners/Gotcha.png'
+import balance from '@/public/images/partners2/Balance_Logo.svg'
+import mindful from '@/public/images/partners2/Mindful_logo.png'
+import notemote from '@/public/images/partners2/Notemote_Logo.svg'
 export default function Testimonials() {
+  const partners = [
+    { name: "Balance", url: "", image: balance },
+    { name: "Mindful", url: "https://www.instagram.com/mindful.arm/", image: mindful },
+    { name: "Notemote", url: "https://www.notemote.am/", image: notemote }
+  ];
   return (
     <section className="relative" id="partners">
 
@@ -34,29 +37,22 @@ export default function Testimonials() {
           </div>
 
           {/* Items */}
-          <div className="max-w-sm md:max-w-4xl mx-auto grid gap-2 lg:grid-cols-5 sm:grid-cols-2">
+          <div className="max-w-sm md:max-w-4xl mx-auto grid gap-2 lg:grid-cols-3 sm:grid-cols-2">
 
-            {/* Item */}
-            <div className="flex items-center justify-center py-2 col-span-2 md:col-auto">
-              <a href="https://am.coca-colahellenic.com/en/our-24-7-portfolio/hydration/bonaqua" target='_blank'><Image className="md:max-w-none mx-auto rounded" src={bonaqua} width={150} height="39" alt="BonAqua"  title='BonAqua' /></a>
+          {partners.map((partner, index) => (
+            <div key={index} className="flex items-center justify-center py-2 col-span-2 md:col-auto">
+              <a href={partner.url} target="_blank" rel="noopener noreferrer">
+                <Image 
+                  className="md:max-w-none mx-auto rounded" 
+                  src={partner.image} 
+                  width={200} 
+                  height={39} 
+                  alt={partner.name} 
+                  title={partner.name} 
+                />
+              </a>
             </div>
-
-            {/* Item */}
-            <div className="flex items-center justify-center py-2 col-span-2 md:col-auto">
-              <a href="https://www.easypay.am/hy" target='_blank'><Image className="md:max-w-none mx-auto rounded" src={easypay} width={150} height="39" alt="EasyPay" title="EasyPay"/></a>
-            </div>
-            {/* Item */}
-            <div className="flex items-center justify-center py-2 col-span-2 md:col-auto">
-              <a href="https://www.instagram.com/arpi_rose/" target='_blank'><Image className="md:max-w-none mx-auto rounded" src={arpi_rose} width={150} height="39" alt="Arpi Rose" title="Arpi Rose" /></a>
-            </div>
-            {/* Item */}
-            <div className="flex items-center justify-center py-2 col-span-2 md:col-auto">
-              <a href="https://linktr.ee/cinemalabstudios" target='_blank'><Image className="md:max-w-none mx-auto rounded" src={cinema_lab} width={150} height="39" alt="Cinema Lab" title="Cinema Lab" /></a>
-            </div>
-            {/* Item */}
-            <div className="flex items-center justify-center py-2 col-span-2 md:col-auto">
-              <a href="https://gotcha.technology/" target='_blank'><Image className="md:max-w-none mx-auto rounded" src={gotcha} width={150} height="39" alt="Gotcha" title="Gotcha" /></a>
-            </div>
+          ))}
           </div>
         </div>
       </div>
