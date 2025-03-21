@@ -9,7 +9,7 @@ import edgar from '@/public/images/speakers2/Edgar.png'
 import nare from '@/public/images/speakers2/Nare.png'
 import pavel from '@/public/images/speakers2/pavel.png'
 import dr_tatev from '@/public/images/speakers2/dr_Tatev.png'
-
+import lusine from '@/public/images/speakers2/lusine.jpeg'
 export default function Features() {
   const speakers = [
     {
@@ -41,6 +41,12 @@ export default function Features() {
       name: "Edgar Galstyan",
       role: "AI and Human Brain",
       image: edgar,
+    },
+    {
+      id: 7,
+      name: "Lusine Kanetsyan",
+      role: "The Science of Influence",
+      image: lusine,
     },
     {
       id: 6,

@@ -4,7 +4,7 @@ import mindful from '@/public/images/partners2/Mindful_logo.png'
 import notemote from '@/public/images/partners2/Notemote_Logo.svg'
 export default function Testimonials() {
   const partners = [
-    { name: "Balance", url: "", image: balance },
+    { name: "Balance", url: "https://www.instagram.com/balancemarketing.studio?igsh=MWE5NzRzd3dqODlmYQ==", image: balance },
     { name: "Mindful", url: "https://www.instagram.com/mindful.arm/", image: mindful },
     { name: "Notemote", url: "https://www.notemote.am/", image: notemote }
   ];
