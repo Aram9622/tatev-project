@@ -35,7 +35,7 @@ export default function About() {
           </div>
 
           {/* Items */}
-          <div className="max-w-sm md:max-w-4xl mx-auto grid">
+          <div className="max-w-sm md:max-w-4xl mx-auto grid pl-4">
             <ol start={1} style={{ listStyleType: 'decimal' }}>
               <li className="text-xl text-gray-600 mb-8">Gain insights from experts in personal development and neuroscience on the latest advancements and trends.</li>
               <li className="text-xl text-gray-600 mb-8">Learn practical ways to apply neuroscience principles to enhance well-being, productivity, relationships, and personal growth.</li>
@@ -56,7 +56,7 @@ export default function About() {
           </div>
 
           {/* Items */}
-          <div className="max-w-sm md:max-w-4xl mx-auto grid flex justify-center flex-col">
+          <div className="max-w-sm md:max-w-4xl mx-auto grid flex justify-center flex-col pl-4">
             <ol start={1} style={{ listStyleType: 'decimal' }}>
               <li className="text-xl text-gray-600 mb-8" style={{ lineHeight: 2 }}>
                 <p>Showcase CSR.</p>
@@ -122,7 +122,7 @@ export default function About() {
           </div>
 
           {/* Items */}
-          <div className="max-w-sm md:max-w-4xl mx-auto grid flex justify-center flex-col">
+          <div className="max-w-sm md:max-w-4xl mx-auto grid flex justify-center flex-col pl-4">
             <ol start={1} style={{ listStyleType: 'decimal' }}>
               <li className="text-xl text-gray-600 mb-8" style={{ lineHeight: 2 }}>
                 <p>Targeted Audience</p>
