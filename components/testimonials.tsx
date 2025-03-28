@@ -41,10 +41,10 @@ export default function Testimonials() {
           </div>
 
           {/* Items */}
-          <div className="max-w-sm md:max-w-4xl mx-auto grid gap-2 lg:grid-cols-5 sm:grid-cols-2">
+          <div className="max-w-sm md:max-w-4xl mx-auto grid gap-2 lg:grid-cols-5 md:grid-cols-3 grid-cols-2">
 
           {partners.map((partner, index) => (
-            <div key={index} className="flex items-center justify-center py-2 col-span-2 md:col-auto">
+            <div key={index} className="flex items-center justify-center py-2  md:col-auto">
               <a href={partner.url} target="_blank" rel="noopener noreferrer">
                 <Image 
                   className="md:max-w-none mx-auto rounded" 
