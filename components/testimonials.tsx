@@ -9,7 +9,7 @@ export default function Testimonials() {
     { name: "Balance", url: "https://www.instagram.com/balancemarketing.studio?igsh=MWE5NzRzd3dqODlmYQ==", image: balance },
     { name: "Mindful", url: "https://www.instagram.com/mindful.arm/", image: mindful },
     { name: "Notemote", url: "https://www.notemote.am/", image: notemote },
-    { name: "EQuality", url: "https://www.notemote.am/", image: equality },
+    { name: "EQuality", url: "https://www.linkedin.com/company/e-quality-website-creation/", image: equality },
     { name: "GingernRose", url: "https://www.instagram.com/gingerrose.co/", image: gingern_rose },
   ];
   return (
