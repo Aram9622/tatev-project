@@ -81,77 +81,19 @@ export default function Features() {
 
           {/* Section header */}
           <div className="max-w-3xl mx-auto text-center pb-12 md:pb-16">
-            <h1 className="h2 mb-4">Seasoned Speakers and the Topics </h1>
+            <h1 className="h2 mb-4">Seasoned Speakers and the Topics</h1>
             <p className="text-xl text-gray-600">Each of the speakers has a unique & science-based topic.</p>
           </div>
 
           {/* Section content */}
-          <div className="md:grid md:grid-cols-12 md:gap-6">
+          <div className="md:grid md:grid-cols-3 md:gap-x-6">
             {/* Content */}
-            <div className="max-w-xl md:max-w-none md:w-full mx-auto md:col-span-7 lg:col-span-6" data-aos="fade-right">
-              <div className="md:pr-4 lg:pr-12 xl:pr-16">
-                <p className="text-xl text-gray-600"></p>
-              </div>
-              {/* Tabs buttons */}
-              <div className="mb-8 md:mb-0">
-              {speakers.map((speaker) => (
-                <a
-                  key={speaker.id}
-                  className={`flex items-center justify-between text-lg p-5 rounded border transition duration-300 ease-in-out mb-3 ${
-                    tab !== speaker.id
-                      ? "bg-white shadow-md border-gray-200 hover:shadow-lg"
-                      : "bg-gray-200 border-transparent"
-                  }`}
-                  href="#speakers"
-                  onClick={(e) => {
-                    e.preventDefault();
-                    setTab(speaker.id);
-                    location.href = "#speaker"+speaker.id
-                  }}
-                >
-                  <div>
-                    <div className="font-bold leading-snug tracking-tight mb-1">
-                      {speaker.name}
-                    </div>
-                    <div className="text-gray-600">
-                      {speaker.role.split("\n").map((line, index) => (
-                        <p key={index}>{line}</p>
-                      ))}
-                    </div>
-                  </div>
-                  <div className="flex justify-center items-center w-8 h-8 rounded-full flex-shrink-0 ml-3"></div>
-                </a>
-              ))}
-              </div>
-            </div>
-
-            {/* Tabs items */}
-            <div className="max-w-xl md:max-w-none md:w-full mx-auto md:col-span-5 lg:col-span-6 mb-8 md:mb-0 md:order-1">
-              <div className="transition-all">
-                <div className="relative flex flex-col text-center lg:text-right" data-aos="zoom-y-out" ref={tabs} >
-                {speakers.map((speaker) => (
-                  <Transition
-                    key={speaker.id}
-                    show={tab === speaker.id}
-                    appear={true}
-                    className="w-full"
-                    enter="transition ease-in-out duration-700 transform order-first"
-                    enterFrom="opacity-0 translate-y-16"
-                    enterTo="opacity-100 translate-y-0"
-                    leave="transition ease-in-out duration-300 transform absolute"
-                    leaveFrom="opacity-100 translate-y-0"
-                    leaveTo="opacity-0 -translate-y-16"
-                    beforeEnter={() => heightFix()}
-                    unmount={false}
-                  >
-                    <div className="relative inline-flex flex-col">
-                      <Image className="md:max-w-none mx-auto rounded" src={speaker.image} width={500} height={462} alt="Features bg" id={"speaker"+speaker.id}/>
-                    </div>
-                  </Transition>
-                ))}
+            {speakers.map((speaker) => (
+                <div className="relative flex flex-col items-center bg-white rounded  mb-6">
+                  <Image className="md:max-w-none mx-auto rounded w-[100%] shadow-md shadow-black" src={speaker.image} alt="Features bg" id={"speaker"+speaker.id}/>
                 </div>
-              </div>
-            </div>
+              ))}
+            
           </div>
 
         </div>
