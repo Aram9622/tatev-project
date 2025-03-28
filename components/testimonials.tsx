@@ -2,11 +2,15 @@ import Image from 'next/image'
 import balance from '@/public/images/partners2/Balance_Logo.svg'
 import mindful from '@/public/images/partners2/Mindful_logo.png'
 import notemote from '@/public/images/partners2/Notemote_Logo.svg'
+import equality from '@/public/images/partners2/EQuaility.svg'
+import gingern_rose from '@/public/images/partners2/GingernRose.svg'
 export default function Testimonials() {
   const partners = [
     { name: "Balance", url: "https://www.instagram.com/balancemarketing.studio?igsh=MWE5NzRzd3dqODlmYQ==", image: balance },
     { name: "Mindful", url: "https://www.instagram.com/mindful.arm/", image: mindful },
-    { name: "Notemote", url: "https://www.notemote.am/", image: notemote }
+    { name: "Notemote", url: "https://www.notemote.am/", image: notemote },
+    { name: "EQuality", url: "https://www.notemote.am/", image: equality },
+    { name: "GingernRose", url: "https://www.instagram.com/gingerrose.co/", image: gingern_rose },
   ];
   return (
     <section className="relative" id="partners">
@@ -37,7 +41,7 @@ export default function Testimonials() {
           </div>
 
           {/* Items */}
-          <div className="max-w-sm md:max-w-4xl mx-auto grid gap-2 lg:grid-cols-3 sm:grid-cols-2">
+          <div className="max-w-sm md:max-w-4xl mx-auto grid gap-2 lg:grid-cols-5 sm:grid-cols-2">
 
           {partners.map((partner, index) => (
             <div key={index} className="flex items-center justify-center py-2 col-span-2 md:col-auto">
