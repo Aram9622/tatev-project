@@ -19,7 +19,7 @@ export default function Home() {
       <Features />
       <FeaturesBlocks />
       <About />
-      {/* <Sponsor /> */}
+      <Sponsor />
       <Testimonials />
       {/* <Map /> */}
     </>

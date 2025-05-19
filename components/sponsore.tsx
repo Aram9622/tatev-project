@@ -1,5 +1,7 @@
 import Image from 'next/image'
 import cofix from '@/public/images/partners/cofix.png'
+import paul_1 from '@/public/images/sponsors2/Paul_Logo-01.svg'
+import paul_2 from '@/public/images/sponsors2/Paul_Logo-02.svg'
 export default function Testimonials() {
   return (
     <section className="relative" id="sponsor">
@@ -34,8 +36,11 @@ export default function Testimonials() {
 
             {/* Item */}
             <div className="flex items-center justify-center py-2 col-span-2 md:col-auto">
-              <a href="https://www.instagram.com/cofix_armenia?igsh=OXo3NWxiOXAxcHRv" target='_blank'>
-                <Image className="md:max-w-none mx-auto rounded" src={cofix} width={150} height="39" alt="Cofix"  title='Cofix' /></a>
+              <a href="https://www.instagram.com/paul_armenia/" target='_blank'>
+                <Image className="md:max-w-none mx-auto rounded" src={paul_1} width={250} alt="Cofix"  title='Paul depuis 1889' /></a>
+
+                <a href="https://www.instagram.com/paul_armenia/" target='_blank'>
+                <Image className="md:max-w-none mx-auto rounded" src={paul_2} width={250} alt="Cofix"  title='Paul LE CAFE' /></a>
             </div>
           </div>
         </div>
