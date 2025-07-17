@@ -47,7 +47,7 @@ export default function Hero() {
                 alt="Picture of the author"
               /> */}
               <iframe width="100%" height="621" 
-        src="https://www.youtube.com/embed/Jp5okNO9ymU" 
+        src="https://www.youtube.com/embed/Dn7C6YkGeCk" 
         title="NeurOn Talks | Brain and Neuroplasticity Conference" 
         allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" >
           
