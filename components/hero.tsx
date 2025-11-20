@@ -30,28 +30,22 @@ export default function Hero() {
 
           {/* Section header */}
           <div className="text-center pb-12 md:pb-16">
-            <h1 className="text-5xl md:text-6xl font-extrabold leading-tighter tracking-tighter mb-4 decoration-[#74ab74]" data-aos="zoom-y-out">NeurOn Talks 2</h1>
+            <h1 className="text-5xl md:text-6xl font-extrabold leading-tighter tracking-tighter mb-4 decoration-[#74ab74]" data-aos="zoom-y-out">NeurOn Talks</h1>
             <div className="max-w-3xl mx-auto">
-              <p className="text-xl text-gray-600 mb-8" data-aos="zoom-y-out" data-aos-delay="150">The Brain Code | Bridging Neuroscience and AI</p>
+              <p className="text-xl text-gray-600 mb-8" data-aos="zoom-y-out" data-aos-delay="150">We turn websites into brain-friendly conversion machines — using neuroscience, behavioral data, and smart design.</p>
               <div className="max-w-xs mx-auto sm:max-w-none sm:flex sm:justify-center" data-aos="zoom-y-out" data-aos-delay="300">
-                <div>
+                {/* <div>
                   <a href="https://tally.so/r/n9o9RQ" target='_blank' className='btn-sm px-8 py-4 text-xl text-white bg-[#ff0000a0] hover:bg-[#ff0000a0] ml-3'>Register Now</a>
-                </div>
+                </div> */}
               </div>
             </div>
           </div>
-          {/* <Image
-                src={VideoThumb}
-                width={1920}
-                height={400}
-                alt="Picture of the author"
-              /> */}
-              <iframe width="100%" height="621" 
+              {/* <iframe width="100%" height="621" 
         src="https://www.youtube.com/embed/Dn7C6YkGeCk" 
         title="NeurOn Talks | Brain and Neuroplasticity Conference" 
         allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" >
           
-        </iframe>
+        </iframe> */}
         </div>
 
       </div>

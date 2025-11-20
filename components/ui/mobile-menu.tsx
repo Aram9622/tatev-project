@@ -1,14 +1,16 @@
-'use client'
-
 import { useState, useRef, useEffect } from 'react'
 import { Transition } from '@headlessui/react'
 import Link from 'next/link'
+import { usePathname } from 'next/navigation'
 
 export default function MobileMenu() {
   const [mobileNavOpen, setMobileNavOpen] = useState<boolean>(false)
 
   const trigger = useRef<HTMLButtonElement>(null)
   const mobileNav = useRef<HTMLDivElement>(null)
+
+  const pathname = usePathname()
+  const isNeurontalksPage = pathname.includes('neurontalks')
 
   // close the mobile menu on click outside
   useEffect(() => {
@@ -70,6 +72,13 @@ export default function MobileMenu() {
               <li>
                 <Link onClick={()=>setMobileNavOpen(false)} href="#speakers" className="font-medium text-gray-600 hover:text-gray-900 px-5 py-3 flex items-center transition duration-150 ease-in-out">Speakers</Link>
               </li>
+              { !isNeurontalksPage && (
+                <li>
+                  <Link onClick={()=>setMobileNavOpen(false)} href="#agenda" className="font-medium text-gray-600 hover:text-gray-900 px-5 py-3 flex items-center transition duration-150 ease-in-out">
+                    Agenda
+                  </Link>
+                </li>
+              )}
               <li>
                 <Link onClick={()=>setMobileNavOpen(false)} href="#about" className="font-medium text-gray-600 hover:text-gray-900 px-5 py-3 flex items-center transition duration-150 ease-in-out">Why Join NeurOn Talks</Link>
               </li>
@@ -77,10 +86,15 @@ export default function MobileMenu() {
                 <Link onClick={()=>setMobileNavOpen(false)} href="#partners" className="font-medium text-gray-600 hover:text-gray-900 px-5 py-3 flex items-center transition duration-150 ease-in-out">Partners</Link>
               </li>
               <li className='mb-5'>
-                <Link onClick={()=>setMobileNavOpen(false)} href="https://www.neurontalks.am/neurontalks1" target='_blank' className="btn-sm text-white bg-[#757575] hover:bg-black ml-3">
-                  <span>Neuron Talks 1</span>
+                <Link onClick={()=>setMobileNavOpen(false)} href="/neurontalks1" className="btn-sm text-white bg-[#757575] hover:bg-black ml-3">
+                  <span>NT 2024</span>
                 </Link>
-              </li> 
+              </li>
+              <li className='mb-5'>
+                <Link onClick={()=>setMobileNavOpen(false)} href="/neurontalks2" className="btn-sm text-white bg-[#757575] hover:bg-black ml-3">
+                  <span>NT 2025</span>
+                </Link>
+              </li>
               <li>
                 <Link href="https://docs.google.com/forms/d/e/1FAIpQLScCvrR_JkRwzoivY_TeDgX6tk3_Gfc3cQrntOrLZcALySm_sA/viewform" target='_blank' className="btn-sm text-gray-200 bg-gray-900 hover:bg-gray-800 ml-3">
                   <span>Become a Partner</span>
@@ -100,7 +114,7 @@ export default function MobileMenu() {
                 </svg>
               </Link>
             </li> */}
-          </ul>          
+          </ul>
         </Transition>
       </div>
     </div>

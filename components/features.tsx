@@ -79,15 +79,15 @@ export default function Features() {
       <div className="relative max-w-6xl mx-auto px-4 sm:px-6">
         <div className="pt-12 md:pt-20">
 
-          {/* Section header */}
+         
           <div className="max-w-3xl mx-auto text-center pb-12 md:pb-16">
             <h1 className="h2 mb-4">Seasoned Speakers and the Topics</h1>
             <p className="text-xl text-gray-600">Each of the speakers has a unique & science-based topic.</p>
           </div>
 
-          {/* Section content */}
+         
           <div className="md:grid md:grid-cols-3 md:gap-x-6">
-            {/* Content */}
+          
             {speakers.map((speaker) => (
                 <div className="relative flex flex-col items-center bg-white rounded  mb-6">
                   <Image className="md:max-w-none mx-auto rounded w-[100%] shadow-md shadow-black" src={speaker.image} alt="Features bg" id={"speaker"+speaker.id}/>
