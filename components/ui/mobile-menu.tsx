@@ -62,7 +62,7 @@ export default function MobileMenu() {
           leaveTo="opacity-0"
         >
           <ul className="px-5 py-2">
-              <li>
+              {/* <li>
                 <Link onClick={()=>setMobileNavOpen(false)} href="#home" className="font-medium text-gray-600 hover:text-gray-900 px-5 py-3 flex items-center transition duration-150 ease-in-out">Home</Link>
               </li>
               <li>
@@ -78,7 +78,7 @@ export default function MobileMenu() {
               </li>
               <li>
                 <Link onClick={()=>setMobileNavOpen(false)} href="#partners" className="font-medium text-gray-600 hover:text-gray-900 px-5 py-3 flex items-center transition duration-150 ease-in-out">Partners</Link>
-              </li>
+              </li> */}
               <li className='mb-5'>
                 <Link onClick={()=>setMobileNavOpen(false)} href="/neurontalks1" className="btn-sm text-white bg-[#757575] hover:bg-black ml-3">
                   <span>NT 2024</span>
