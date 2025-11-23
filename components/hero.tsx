@@ -1,7 +1,3 @@
-import VideoThumb from '@/public/images/banner.jpeg'
-import ModalVideo from '@/components/modal-video'
-import Image from 'next/image'
-
 export default function Hero() {
   return (
     <section className="relative">
@@ -30,7 +26,7 @@ export default function Hero() {
 
           {/* Section header */}
           <div className="text-center pb-12 md:pb-16">
-            <h1 className="text-5xl md:text-6xl font-extrabold leading-tighter tracking-tighter mb-4 decoration-[#74ab74]" data-aos="zoom-y-out">NeurOn Talks</h1>
+            <h1 className="text-5xl md:text-9xl font-extrabold leading-tighter tracking-tighter mb-4 decoration-[#74ab74]" data-aos="zoom-y-out">NeurOn Talks</h1>
             <div className="max-w-3xl mx-auto">
               <p className="text-xl text-gray-600 mb-8" data-aos="zoom-y-out" data-aos-delay="150">We turn websites into brain-friendly conversion machines — using neuroscience, behavioral data, and smart design.</p>
               <div className="max-w-xs mx-auto sm:max-w-none sm:flex sm:justify-center" data-aos="zoom-y-out" data-aos-delay="300">

@@ -1,7 +1,6 @@
 'use client'
 
 import { useState, useEffect } from 'react'
-import { usePathname } from 'next/navigation'
 
 import Link from 'next/link'
 import Logo from './logo'
@@ -11,8 +10,6 @@ import MobileMenu from './mobile-menu'
 export default function Header() {
 
   const [top, setTop] = useState<boolean>(true)
-  const pathname = usePathname()
-  const isNeurontalksPage = pathname.includes('neurontalks')
 
   // detect whether user has scrolled the page down by 10px
   const scrollHandler = () => {
@@ -39,19 +36,17 @@ export default function Header() {
           <nav className="hidden md:flex md:grow">
             {/* Desktop sign in links */}
             <ul className="flex grow justify-end flex-nowrap items-center">
-              <li>
+              {/* <li>
                 <Link href="#home" className="font-medium text-gray-600 hover:text-gray-900 px-5 py-3 flex items-center transition duration-150 ease-in-out">Home</Link>
-              </li>
+              </li> */}
               {/* <li>
                 <Link href="#speakers" className="font-medium text-gray-600 hover:text-gray-900 px-5 py-3 flex items-center transition duration-150 ease-in-out">Speakers</Link>
               </li>
-              { !isNeurontalksPage && (
-                <li>
-                  <Link href="#agenda" className="font-medium text-gray-600 hover:text-gray-900 px-5 py-3 flex items-center transition duration-150 ease-in-out">
-                    Agenda
-                  </Link>
-                </li>
-              )}
+              <li>
+                <Link href="#agenda" className="font-medium text-gray-600 hover:text-gray-900 px-5 py-3 flex items-center transition duration-150 ease-in-out">
+                  Agenda
+                </Link>
+              </li>
               <li>
                 <Link href="#about" className="font-medium text-gray-600 hover:text-gray-900 px-5 py-3 flex items-center transition duration-150 ease-in-out">Why Join NeurOn Talks</Link>
               </li>

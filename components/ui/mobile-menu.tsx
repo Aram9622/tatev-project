@@ -1,16 +1,12 @@
 import { useState, useRef, useEffect } from 'react'
 import { Transition } from '@headlessui/react'
 import Link from 'next/link'
-import { usePathname } from 'next/navigation'
 
 export default function MobileMenu() {
   const [mobileNavOpen, setMobileNavOpen] = useState<boolean>(false)
 
   const trigger = useRef<HTMLButtonElement>(null)
   const mobileNav = useRef<HTMLDivElement>(null)
-
-  const pathname = usePathname()
-  const isNeurontalksPage = pathname.includes('neurontalks')
 
   // close the mobile menu on click outside
   useEffect(() => {
@@ -72,13 +68,11 @@ export default function MobileMenu() {
               <li>
                 <Link onClick={()=>setMobileNavOpen(false)} href="#speakers" className="font-medium text-gray-600 hover:text-gray-900 px-5 py-3 flex items-center transition duration-150 ease-in-out">Speakers</Link>
               </li>
-              { !isNeurontalksPage && (
-                <li>
-                  <Link onClick={()=>setMobileNavOpen(false)} href="#agenda" className="font-medium text-gray-600 hover:text-gray-900 px-5 py-3 flex items-center transition duration-150 ease-in-out">
-                    Agenda
-                  </Link>
-                </li>
-              )}
+              <li>
+                <Link onClick={()=>setMobileNavOpen(false)} href="#agenda" className="font-medium text-gray-600 hover:text-gray-900 px-5 py-3 flex items-center transition duration-150 ease-in-out">
+                  Agenda
+                </Link>
+              </li>
               <li>
                 <Link onClick={()=>setMobileNavOpen(false)} href="#about" className="font-medium text-gray-600 hover:text-gray-900 px-5 py-3 flex items-center transition duration-150 ease-in-out">Why Join NeurOn Talks</Link>
               </li>
